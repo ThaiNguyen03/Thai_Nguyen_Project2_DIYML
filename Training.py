@@ -5,8 +5,9 @@ class Training:
     def configure_training(self,parameters):
         self.parameters =parameters
     def start_training(self, model, data, parameters):
-        model.fit(data);
+        model.fit(data,parameters);
     def get_training_stats(self):
         pass
-    def run_iteration(self):
+    def test_model(self,model,dataset):
+        # test model using new dataset
         pass
