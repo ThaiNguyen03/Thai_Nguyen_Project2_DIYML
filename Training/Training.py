@@ -1,6 +1,7 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 from pymongo import MongoClient
+import json,os
 from transformers import Trainer, TrainingArguments, AutoModelForSequenceClassification, AutoTokenizer
 app = Flask(__name__)
 api = Api(app)
@@ -45,9 +46,13 @@ class GetTrainingStats(Resource):
     def get(self):
         data = request.get_json()
         model_name = data.get('model')
-        # Assume you have the trained model available
-        # model = YourTrainedModel()
-
+        output_dir = './results'
+        training_stats_file = os.path.join(output_dir, 'train_results.txt')
+        if os.path.exists(training_stats_file):
+            with open(training_stats_file, 'r') as f:
+                training_stats = json.load(f)
+        else:
+            training_stats = "No training stats found"
         return model_name, 200
 
 api.add_resource(StartTraining, '/start_training')
