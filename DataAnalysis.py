@@ -1,4 +1,4 @@
-def analyze_data():
+def configure_training_parameters(parameters):
     pass
 def add_training_points():
     pass
