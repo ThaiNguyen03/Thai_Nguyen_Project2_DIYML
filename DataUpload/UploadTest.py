@@ -5,9 +5,14 @@ from unittest.mock import patch, MagicMock
 from flask import Flask
 from Dataupload import app, ImageUpload, LabelUpload  # replace with the actual name of your Flask app
 
-logging.basicConfig(filename='testDataUpload.log', filemode='a', level=logging.INFO,
+logging.basicConfig(filename='./testDataUpload.log', filemode='a', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
-
+mylogger = logging.getLogger()
+fhandler = logging.FileHandler(filename='testDataUpload.log', mode='a')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fhandler.setFormatter(formatter)
+mylogger.addHandler(fhandler)
+mylogger.setLevel(logging.DEBUG)
 tracemalloc.start()
 
 
@@ -22,12 +27,12 @@ def test_image_upload():
                 response = app.test_client().post('/upload_images/test_user/test_project/test_image')
                 assert response.status_code == 200
                 assert b'Image uploaded successfully' in response.data
-                logging.info('Image upload test passed successfully.')
+                mylogger.info('Image upload test passed successfully.')
             except Exception as e:
-                logging.error(str(e))
+                mylogger.error(str(e))
 
     current, peak = tracemalloc.get_traced_memory()
-    logging.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+    mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
     tracemalloc.stop()
 
 
@@ -42,12 +47,12 @@ def test_label_upload():
                 response = app.test_client().post('/upload_label/test_user/test_project/test_image')
                 assert response.status_code == 200
                 assert b'Label uploaded successfully' in response.data
-                logging.info('Label upload test passed successfully.')
+                mylogger.info('Label upload test passed successfully.')
             except Exception as e:
-                logging.error(str(e))
+                mylogger.error(str(e))
 
     current, peak = tracemalloc.get_traced_memory()
-    logging.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+    mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
     tracemalloc.stop()
 
 
