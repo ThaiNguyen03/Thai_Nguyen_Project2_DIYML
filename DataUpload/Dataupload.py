@@ -1,4 +1,5 @@
-from flask import Flask, request
+from flask import *
+from fileinput import filename
 from flask_restful import Resource, Api
 from pymongo import MongoClient
 import os
@@ -12,46 +13,65 @@ client = MongoClient(mongo_url)
 db = client['ML_data']
 image_collection = db['images']  # Collection to store image metadata
 
+
 class ImageUpload(Resource):
-    def post(self, user_id, project_id):
+    def post(self, user_id, project_id, image_id):
         if 'file' not in request.files:
             return 'No file part', 400
 
         f = request.files['file']
-        filename = f.filename
-        f.save(filename)
-        filepath = os.path.join('/path/to/save', filename)
-        f.save(filepath)
+        file_name = f.filename
+
+        filepath = os.path.join('/<user_id>/<project_id>/images', file_name)
+        if not os.path.exists('/<user_id>/<project_id>/images'):
+            os.makedirs('/<user_id>/<project_id>/images')
+            filepath = os.path.join('/<user_id>/<project_id>/images', file_name)
+        try:
+            f.save(filepath)
+        except Exception as e:
+            return str(e), 500
 
         # Store image metadata in MongoDB
         image_data = {
             'user_id': user_id,
             'project_id': project_id,
+            'image_id': image_id,
             'filename': filepath,
             'label': None
         }
         # insert file name
-        image_collection.insert_one(image_data)
+        try:
+            image_collection.insert_one(image_data)
+        except Exception as e:
+            return str(e), 500
 
         return 'Image uploaded successfully', 200
 
+
 class LabelUpload(Resource):
-    def post(self, user_id, project_id):
+    def post(self, user_id, project_id, image_id):
         if 'file' not in request.files:
             return 'No file part', 400
 
         f = request.files['file']
         label_filename = f.filename
-        f.save(label_filename)
+        try:
+            f.save(label_filename)
+        except Exception as e:
+            return str(e), 500
 
         # Update image metadata with label information
-        image_query = {'user_id': user_id, 'project_id': project_id}
-        image_collection.update_one(image_query, {'$set': {'label': label_filename}})
+        image_query = {'user_id': user_id, 'project_id': project_id, 'image_id': image_id}
+        try:
+            image_collection.update_one(image_query, {'$set': {'label': label_filename}})
+        except Exception as e:
+            return str(e), 500
 
         return 'Label uploaded successfully', 200
 
-api.add_resource(ImageUpload, '/upload_images/<user_id>/<project_id>')
-api.add_resource(LabelUpload, '/upload_label/<user_id>/<project_id>')
+
+api.add_resource(ImageUpload, '/upload_images/<user_id>/<project_id>/<image_id>/')
+api.add_resource(LabelUpload, '/upload_label/<user_id>/<project_id>/<image_id>')
 
 if __name__ == '__main__':
     app.run(debug=True)

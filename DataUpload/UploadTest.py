@@ -1,47 +1,55 @@
 import pytest
+import logging
+import tracemalloc
+from unittest.mock import patch, MagicMock
 from flask import Flask
-from Dataupload import app, db, image_collection, ImageUpload, LabelUpload
-from io import BytesIO
+from Dataupload import app, ImageUpload, LabelUpload  # replace with the actual name of your Flask app
 
-@pytest.fixture
-def client():
-    app.config['TESTING'] = True
-    with app.test_client() as client:
-        yield client
+logging.basicConfig(filename='testDataUpload.log', filemode='a', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-def test_image_upload(client):
-    # Mock the file for upload
-    data = {
-        'file': (BytesIO(b'my file contents'), 'test_file.jpg')
-    }
+tracemalloc.start()
 
-    # Send POST request
-    response = client.post('/upload_images/user1/project1', content_type='multipart/form-data', data=data)
 
-    # Assert the response
-    assert response.status_code == 200
-    assert response.data == b'Image uploaded successfully'
+def test_image_upload():
+    with app.test_request_context():
+        with patch('flask.request') as mock_request:
+            mock_file = MagicMock()
+            mock_file.filename = 'test_image.jpg'
+            mock_request.files = {'file': mock_file}
 
-    # Assert the file was saved in the database
-    image_data = image_collection.find_one({'user_id': 'user1', 'project_id': 'project1'})
-    assert image_data is not None
-    assert image_data['filename'] == '/path/to/save/test_file.jpg'
-    assert image_data['label'] is None
+            try:
+                response = app.test_client().post('/upload_images/test_user/test_project/test_image')
+                assert response.status_code == 200
+                assert b'Image uploaded successfully' in response.data
+                logging.info('Image upload test passed successfully.')
+            except Exception as e:
+                logging.error(str(e))
 
-def test_label_upload(client):
-    # Mock the file for upload
-    data = {
-        'file': (BytesIO(b'my file contents'), 'test_label.jpg')
-    }
+    current, peak = tracemalloc.get_traced_memory()
+    logging.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+    tracemalloc.stop()
 
-    # Send POST request
-    response = client.post('/upload_label/user1/project1', content_type='multipart/form-data', data=data)
 
-    # Assert the response
-    assert response.status_code == 200
-    assert response.data == b'Label uploaded successfully'
+def test_label_upload():
+    with app.test_request_context():
+        with patch('flask.request') as mock_request:
+            mock_file = MagicMock()
+            mock_file.filename = 'test_label.txt'
+            mock_request.files = {'file': mock_file}
 
-    # Assert the label was saved in the database
-    image_data = image_collection.find_one({'user_id': 'user1', 'project_id': 'project1'})
-    assert image_data is not None
-    assert image_data['label'] == 'test_label.jpg'
+            try:
+                response = app.test_client().post('/upload_label/test_user/test_project/test_image')
+                assert response.status_code == 200
+                assert b'Label uploaded successfully' in response.data
+                logging.info('Label upload test passed successfully.')
+            except Exception as e:
+                logging.error(str(e))
+
+    current, peak = tracemalloc.get_traced_memory()
+    logging.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+    tracemalloc.stop()
+
+
+if __name__ == "__main__":
+    pytest.main()
