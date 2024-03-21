@@ -1,0 +1,15 @@
+2024-03-20 22:42:36,311 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 22:43:16,345 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 22:43:34,874 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 22:46:53,935 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 22:52:30,955 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 22:55:04,039 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 23:00:09,908 - root - INFO - Test for successful login passed.
+2024-03-20 23:00:09,913 - root - INFO - Test for login with wrong password passed.
+2024-03-20 23:00:09,919 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 23:00:56,486 - root - INFO - Test for successful login passed.
+2024-03-20 23:00:56,486 - root - INFO - Current memory usage is 0.0MB; Peak was 0.0MB
+2024-03-20 23:00:56,492 - root - INFO - Test for login with wrong password passed.
+2024-03-20 23:00:56,492 - root - INFO - Current memory usage is 0.0MB; Peak was 0.0MB
+2024-03-20 23:00:56,499 - root - INFO - Test for login with non-existent user passed.
+2024-03-20 23:00:56,500 - root - INFO - Current memory usage is 0.0MB; Peak was 0.0MB
