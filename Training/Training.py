@@ -12,7 +12,8 @@ from torchvision.transforms import RandomResizedCrop, Compose, Normalize, ToTens
 from transformers import Trainer, DefaultDataCollator, TrainingArguments, AutoModelForImageClassification, \
     AutoTokenizer, \
     AutoFeatureExtractor, AutoImageProcessor
-
+from queue import Queue
+from threading import Thread
 app = Flask(__name__)
 api = Api(app)
 
@@ -22,11 +23,12 @@ client = MongoClient(mongo_url)
 db = client['ML_data']
 model_collection = db['model_data']  # Collection to store model parameters
 stats_collection = db['stats']  # Collection to store training stats
-
+task_queue = Queue()
 
 class UploadParameters(Resource):
     def post(self):
         data = request.get_json()
+        task_queue.put(data)
         user_id = data.get('user_id')
         project_id = data.get('project_id')
         parameters = data.get('parameters')
@@ -38,8 +40,8 @@ class UploadParameters(Resource):
         return {"message": "Parameters uploaded successfully"}, 200
 
 
-class StartTraining(Resource):
-    def post(self):
+
+def start_training(data):
         data = request.get_json()
         user_id = data.get('user_id')
         project_id = data.get('project_id')
@@ -135,7 +137,10 @@ class StartTraining(Resource):
 
         return {"message": f"Training for model {model_name} completed successfully"}, 200
 
-
+class StartTraining(Resource):
+    def post(self):
+        data = request.get_json()
+        task_queue.put(data)
 class GetTrainingStats(Resource):
     def get(self):
         data = request.get_json()
@@ -157,6 +162,12 @@ class GetTrainingStats(Resource):
 api.add_resource(UploadParameters, '/upload_parameters')
 api.add_resource(StartTraining, '/start_training')
 api.add_resource(GetTrainingStats, '/get_training_stats')
-
+def worker():
+    while True:
+        data = task_queue.get()
+        start_training(data)
+        task_queue.task_done()
 if __name__ == '__main__':
+    worker_thread = Thread(target=worker)
+    worker_thread.start()
     app.run(debug=True)
