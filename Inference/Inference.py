@@ -10,23 +10,20 @@ api = Api(app)
 
 class InferenceAPI(Resource):
     def post(self):
-        model_name = request.json.get('model_name')
-        image_file = request.files['image']
+        data = request.get_json()
+        model_path = data.get('model_path')
+        image_path = data.get('image_path')
+        model_name = data.get('model_name')
 
 
-        # Load the model and tokenizer
-        my_model = AutoModelForImageClassification.from_pretrained(model_name)
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        inputs = tokenizer(image_file, return_tensors="pt")
 
-        # Run inference
-        classifier = pipeline("image-classification", model= my_model)
-        outputs = my_model(**inputs)
+        my_model = AutoModelForImageClassification.from_pretrained(model_path)
+        user_classifier= pipeline("image-classification",model = my_model)
+        results = user_classifier(image_path)
 
-        # Get the predicted class
-        predicted_label_idx = outputs.logits.argmax(-1).item()
-
-        return {"message": "Inference run successfully", "predicted_class_idx": model.config.id2label[predicted_label_idx]}, 200
+        return {"message": "Inference run successfully",
+                "results": results
+                }, 200
 
 api.add_resource(InferenceAPI, '/inference')
 
