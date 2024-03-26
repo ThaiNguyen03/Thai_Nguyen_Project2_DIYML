@@ -1,11 +1,10 @@
 import pytest
 import logging
 import tracemalloc
-from unittest.mock import patch, MagicMock
 
 from datasets import load_dataset
 
-from Training import app, StartTraining, GetTrainingStats, task_queue, task_complete_event
+from Training import app, StartTraining, task_queue, task_complete_event
 
 logging.basicConfig(filename='./testTraining.log', filemode='a', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -86,15 +85,6 @@ def test_task_queue(client):
 
     assert rv1.status_code == 200
     assert rv2.status_code == 200
-
-
-def test_get_training_stats(client):
-    rv = client.get('/get_training_stats', json={
-        'user_id': 'test_user',
-        'project_id': 'test_project',
-        'model_name': 'google/vit-base-patch16-224-in21k'
-    })
-    assert rv.status_code == 200
 
 
 current, peak = tracemalloc.get_traced_memory()

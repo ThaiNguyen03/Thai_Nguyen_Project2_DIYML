@@ -124,7 +124,7 @@ def start_training(data):
         train_dataset=api_dataset["train"],
         eval_dataset=api_dataset["test"],
         tokenizer=feature_extractor,
-        compute_metrics = compute_metrics
+        compute_metrics=compute_metrics
     )
     try:
         trainer.train()
@@ -166,27 +166,8 @@ class StartTraining(Resource):
         return {"message": "Training request received"}, 200
 
 
-class GetTrainingStats(Resource):
-    def get(self):
-        data = request.get_json()
-        user_id = data.get('user_id')
-        project_id = data.get('project_id')
-        model_name = data.get('model_name')
-        stats = stats_collection.find_one({
-            'user_id': user_id,
-            'project_id': project_id,
-            'model_name': model_name
-        })
-
-        if stats:
-            return stats['training_stats'], 200
-        else:
-            return {"message": "No training stats found"}, 404
-
-
 api.add_resource(UploadParameters, '/upload_parameters')
 api.add_resource(StartTraining, '/start_training')
-api.add_resource(GetTrainingStats, '/get_training_stats')
 
 if __name__ == '__main__':
     app.run(debug=True)
