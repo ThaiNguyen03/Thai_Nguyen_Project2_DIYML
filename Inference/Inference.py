@@ -16,7 +16,10 @@ class InferenceAPI(Resource):
         model_path = data.get('model_path')
         image_path = data.get('image_path')
         model_name = data.get('model_name')
-        pil_image = Image.open(image_path)
+        try:
+            pil_image = Image.open(image_path)
+        except Exception as e:
+            return {"message":"Image not found"}, 404
         image_processor = AutoImageProcessor.from_pretrained(model_path)
         inputs = image_processor(pil_image, return_tensors = "pt")
 

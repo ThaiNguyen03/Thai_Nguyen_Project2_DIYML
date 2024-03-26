@@ -44,9 +44,25 @@ def test_inference_api(client):
     })
     assert response.status_code == 200
     assert response.get_json() == {"message": "Inference run successfully", "results": "beignets"}
-    mylogger.info('Test for successful inference passed.')
-    current, peak = tracemalloc.get_traced_memory()
-    mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+def test_wrong_image(client):
+        test_set = load_dataset("food101", split="validation[:100]")
+        # test_set.save_to_disk('./training_test')
+        test_set.to_parquet('./inference.parquet')
+        image = test_set["image"][10]
+        image_path = "./inference_data"
+        if not os.path.exists(image_path):
+            os.mkdir(image_path)
+        image = image.save(f"{image_path}/image.png")
+        response = client.post('/inference', json={
+            'model_name': 'test_model_path',
+            'image_path': f'{image_path}/image_wrong.png',
+            'model_path': '../Training/test_user/test_project/model'
+        })
+        assert response.status_code == 404
+
+        mylogger.info('Test for successful inference passed.')
+current, peak = tracemalloc.get_traced_memory()
+mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
 
 
 # Stop tracing memory allocations
