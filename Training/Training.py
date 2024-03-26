@@ -50,9 +50,9 @@ def start_training(data):
     train_dataset_path = data.get('train_dataset')
     parameters_data = model_collection.find_one({"user_id": user_id, "project_id": project_id})
     parameters = parameters_data['parameters']
-   # train_dataset_path = parameters['train_dataset']
+    # train_dataset_path = parameters['train_dataset']
     # api_dataset = load_from_disk(train_dataset_path)
-    api_dataset = load_dataset('parquet', data_files= train_dataset_path)
+    api_dataset = load_dataset('parquet', data_files=train_dataset_path)
 
     api_dataset = api_dataset["train"].train_test_split(test_size=0.2)
     # Check if 'labels' is in features
@@ -100,6 +100,7 @@ def start_training(data):
 
     # eval_dataset = load_dataset('parquet', data_files='/home/thai/training_test/validation-00000-of-00003.parquet')
     # load training arguments
+    model_saved_path = f'./{user_id}/{project_id}/model'
     training_args = TrainingArguments(
         output_dir=f'./results/{user_id}/{project_id}',
         num_train_epochs=parameters.get('num_train_epochs'),
@@ -122,7 +123,8 @@ def start_training(data):
         data_collator=data_collator,
         train_dataset=api_dataset["train"],
         eval_dataset=api_dataset["test"],
-        tokenizer=feature_extractor
+        tokenizer=feature_extractor,
+        compute_metrics = compute_metrics
     )
     try:
         trainer.train()
@@ -131,11 +133,14 @@ def start_training(data):
         return {"message": "Training failed"}, 400
 
     # Save training stats to the database
+    trainer.save_model(model_saved_path)
+    absolute_model_path = os.path.abspath(model_saved_path)
     stats_collection.insert_one({
         'user_id': user_id,
         'project_id': project_id,
         'model_name': model_name,
-        'training_stats': trainer.evaluate()
+        'training_stats': trainer.evaluate(),
+        'model_saved_path': absolute_model_path
     })
 
     return {"message": f"Training for model {model_name} completed successfully"}, 200

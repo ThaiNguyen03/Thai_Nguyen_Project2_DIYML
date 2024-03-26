@@ -62,7 +62,7 @@ def test_upload_parameters(client):
 # assert b'Training for model test_model completed successfully' in rv.data
 def test_task_queue(client):
     test_set = load_dataset("food101", split="train[:100]")
-    # test_set.save_to_disk('./training_test')
+    test_set.save_to_disk('./training_test')
     test_set.to_parquet('./training_test/training_test.parquet')
     with task_queue.mutex:
         task_queue.queue.clear()
