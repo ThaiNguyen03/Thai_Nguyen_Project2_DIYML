@@ -23,7 +23,7 @@ class GetTrainingStats(Resource):
             'model_name': model_name
         })
 
-        if stats:
+        if stats and 'training_stats' in stats:
             return stats['training_stats'], 200
         else:
             return {"message": "No training stats found"}, 404
