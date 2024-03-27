@@ -37,7 +37,7 @@ def test_inference_api(client):
     if not os.path.exists(image_path):
         os.mkdir(image_path)
     image = image.save(f"{image_path}/image.png")
-    response = client.post('/inference', json={
+    response = client.post('/inference/user1/project1', json={
         'model_name': 'test_model_path',
         'image_path': f'{image_path}/image.png',
         'model_path': '../Training/test_user/test_project/model'
@@ -53,7 +53,7 @@ def test_wrong_image(client):
         if not os.path.exists(image_path):
             os.mkdir(image_path)
         image = image.save(f"{image_path}/image.png")
-        response = client.post('/inference', json={
+        response = client.post('/inference/user1/project1', json={
             'model_name': 'test_model_path',
             'image_path': f'{image_path}/image_wrong.png',
             'model_path': '../Training/test_user/test_project/model'
