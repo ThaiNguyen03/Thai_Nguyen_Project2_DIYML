@@ -1,0 +1,940 @@
+2024-03-27 15:44:25,660 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 15:44:25,671 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:26,297 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:44:26,305 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 15:44:26,884 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 15:44:27,033 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:44:27,045 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:27,569 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 15:44:27,630 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:28,215 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 15:44:28,567 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:29,078 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:29,137 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:29,194 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 15:44:29,245 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:29,286 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:29,329 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,338 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,348 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,353 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,356 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,510 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,512 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:29,513 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:31,556 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,644 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,682 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,695 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,705 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,717 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:31,744 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:32,560 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:32,604 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:32,650 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:32,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:32,743 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:32,772 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:32,777 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:32,778 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:33,652 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:33,712 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:33,723 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:33,788 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,353 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 15:44:34,403 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:34,448 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:34,812 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:34,859 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:34,892 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,896 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,898 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,902 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,926 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,972 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,973 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:34,978 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:36,777 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,901 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,903 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,929 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,931 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,943 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,948 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:36,990 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:37,032 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:37,090 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:37,131 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:44:37,177 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:44:37,199 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:37,205 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:37,207 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:38,160 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:38,211 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:38,230 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:44:38,234 - filelock - DEBUG - Attempting to acquire lock 1996650221920 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:44:38,236 - filelock - DEBUG - Lock 1996650221920 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:44:38,238 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:44:38,273 - filelock - DEBUG - Attempting to release lock 1996650221920 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:44:38,275 - filelock - DEBUG - Lock 1996650221920 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:44:38,402 - filelock - DEBUG - Attempting to acquire lock 1996657423760 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:44:38,404 - filelock - DEBUG - Lock 1996657423760 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:44:38,405 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:44:38,406 - filelock - DEBUG - Attempting to release lock 1996657423760 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:44:38,407 - filelock - DEBUG - Lock 1996657423760 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:44:57,850 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 15:44:57,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:58,477 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:44:58,484 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 15:44:59,048 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 15:44:59,287 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:44:59,298 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:44:59,842 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 15:44:59,877 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,427 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 15:45:00,618 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:00,659 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:00,704 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:00,755 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 15:45:00,810 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:00,883 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:00,900 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,904 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,904 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,914 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,915 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,917 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:00,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:02,928 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:02,946 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:02,976 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:02,983 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:03,014 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:03,015 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:03,023 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:03,054 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:03,106 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:03,150 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:03,199 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:03,382 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:03,407 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:03,409 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:03,412 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:04,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:04,406 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:04,408 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:04,470 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:04,973 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 15:45:05,023 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:05,109 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:05,430 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:05,476 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:05,508 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,511 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,515 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,518 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,522 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,548 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,611 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:05,612 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:07,464 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,645 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,658 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,670 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,697 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,713 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:07,810 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:08,401 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:08,441 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:08,485 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:08,707 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:08,750 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:08,770 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:08,774 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:08,775 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:10,397 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:10,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:10,491 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:10,494 - filelock - DEBUG - Attempting to acquire lock 2444030789008 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:10,495 - filelock - DEBUG - Lock 2444030789008 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:10,497 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:45:10,499 - filelock - DEBUG - Attempting to release lock 2444030789008 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:10,500 - filelock - DEBUG - Lock 2444030789008 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:10,609 - filelock - DEBUG - Attempting to acquire lock 2444041518064 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:10,610 - filelock - DEBUG - Lock 2444041518064 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:10,611 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:45:10,612 - filelock - DEBUG - Attempting to release lock 2444041518064 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:10,612 - filelock - DEBUG - Lock 2444041518064 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:11,048 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 15:45:11,752 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 15:45:41,088 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 15:45:41,096 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:41,625 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:45:41,634 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 15:45:42,189 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 15:45:42,311 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 15:45:42,320 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:42,840 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 15:45:42,874 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,417 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 15:45:43,533 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:43,569 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:43,624 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:43,665 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 15:45:43,717 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:43,774 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:43,812 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,816 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,818 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,822 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,852 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,854 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:43,860 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:45,731 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,852 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,872 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,877 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,935 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,942 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:45,996 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:46,291 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:46,337 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:46,429 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:46,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:46,758 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:46,781 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:46,787 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:46,788 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:47,694 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:47,751 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:47,796 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:47,860 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 15:45:48,410 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:48,643 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:48,683 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:48,728 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:48,764 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,770 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,774 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,775 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,780 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,808 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:48,842 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:50,704 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,706 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,777 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,865 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,882 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,908 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:50,909 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:51,408 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:51,515 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:51,564 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:51,606 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 15:45:51,649 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 15:45:51,669 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:51,673 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:51,676 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 15:45:52,578 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:52,594 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:52,727 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 15:45:52,730 - filelock - DEBUG - Attempting to acquire lock 2681630773456 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:52,732 - filelock - DEBUG - Lock 2681630773456 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:52,734 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:45:52,736 - filelock - DEBUG - Attempting to release lock 2681630773456 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:52,737 - filelock - DEBUG - Lock 2681630773456 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 15:45:52,847 - filelock - DEBUG - Attempting to acquire lock 2681639845760 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:52,849 - filelock - DEBUG - Lock 2681639845760 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:52,850 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 15:45:52,852 - filelock - DEBUG - Attempting to release lock 2681639845760 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:52,853 - filelock - DEBUG - Lock 2681639845760 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 15:45:53,079 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 15:45:53,639 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 15:45:53,652 - filelock - DEBUG - Attempting to acquire lock 2681645017488 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-aa447a9351dc26dd_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 15:45:53,653 - filelock - DEBUG - Lock 2681645017488 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-aa447a9351dc26dd_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 15:45:53,654 - filelock - DEBUG - Attempting to release lock 2681645017488 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-aa447a9351dc26dd_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 15:45:53,655 - filelock - DEBUG - Lock 2681645017488 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-aa447a9351dc26dd_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 15:45:53,659 - filelock - DEBUG - Attempting to acquire lock 2681645017488 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 15:45:53,660 - filelock - DEBUG - Lock 2681645017488 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 15:45:53,724 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-aa447a9351dc26dd/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 15:45:53,761 - filelock - DEBUG - Attempting to acquire lock 2681117130240 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 15:45:53,762 - filelock - DEBUG - Lock 2681117130240 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 15:45:53,762 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-aa447a9351dc26dd/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 15:45:53,764 - filelock - DEBUG - Attempting to release lock 2681117130240 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 15:45:53,765 - filelock - DEBUG - Lock 2681117130240 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 15:45:53,767 - filelock - DEBUG - Attempting to release lock 2681645017488 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 15:45:53,767 - filelock - DEBUG - Lock 2681645017488 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-aa447a9351dc26dd\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 15:47:04,157 - root - INFO - Test for successful test_module passed.
+2024-03-27 16:02:21,623 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 16:02:21,635 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:22,272 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:02:22,281 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:02:22,864 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:02:23,050 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:02:23,060 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:23,547 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:02:23,591 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,149 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:02:24,304 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:24,355 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:24,400 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:24,740 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 16:02:24,790 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:24,831 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:24,866 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,869 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,874 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,875 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,879 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,880 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,882 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:24,911 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:26,750 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,780 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,781 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,865 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,895 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,915 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,916 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:26,956 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:27,000 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:27,551 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:27,668 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:27,712 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:27,733 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:27,737 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:27,742 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:28,659 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:28,686 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:28,794 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:28,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,404 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:02:29,451 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:29,502 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:29,558 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:29,603 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:29,638 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,644 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,655 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,659 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,660 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,661 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,664 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:29,690 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:31,442 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,617 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,623 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,665 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,710 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,719 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:31,774 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:32,057 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:32,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:32,408 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:32,449 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:32,506 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:32,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:32,535 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:32,536 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:33,477 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:33,487 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:33,500 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:33,503 - filelock - DEBUG - Attempting to acquire lock 2190929506144 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:02:33,506 - filelock - DEBUG - Lock 2190929506144 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:02:33,508 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:02:33,511 - filelock - DEBUG - Attempting to release lock 2190929506144 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:02:33,513 - filelock - DEBUG - Lock 2190929506144 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:02:33,626 - filelock - DEBUG - Attempting to acquire lock 2190934129744 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:02:33,627 - filelock - DEBUG - Lock 2190934129744 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:02:33,628 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:02:33,629 - filelock - DEBUG - Attempting to release lock 2190934129744 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:02:33,631 - filelock - DEBUG - Lock 2190934129744 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:02:33,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:02:34,293 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:02:34,306 - filelock - DEBUG - Attempting to acquire lock 2190934178560 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-251afeba8fe6abb4_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:02:34,308 - filelock - DEBUG - Lock 2190934178560 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-251afeba8fe6abb4_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:02:34,308 - filelock - DEBUG - Attempting to release lock 2190934178560 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-251afeba8fe6abb4_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:02:34,310 - filelock - DEBUG - Lock 2190934178560 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-251afeba8fe6abb4_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:02:34,313 - filelock - DEBUG - Attempting to acquire lock 2190939369408 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:02:34,315 - filelock - DEBUG - Lock 2190939369408 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:02:34,375 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-251afeba8fe6abb4/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 16:02:34,404 - filelock - DEBUG - Attempting to acquire lock 2190928344224 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:02:34,405 - filelock - DEBUG - Lock 2190928344224 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:02:34,405 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-251afeba8fe6abb4/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 16:02:34,407 - filelock - DEBUG - Attempting to release lock 2190928344224 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:02:34,407 - filelock - DEBUG - Lock 2190928344224 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:02:34,409 - filelock - DEBUG - Attempting to release lock 2190939369408 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:02:34,409 - filelock - DEBUG - Lock 2190939369408 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-251afeba8fe6abb4\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:02:50,271 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 16:02:50,280 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:50,919 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:02:50,927 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:02:51,477 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:02:51,611 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:02:51,616 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:52,093 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:02:52,133 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:52,628 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:02:52,761 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:52,797 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:52,850 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:52,914 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 16:02:52,971 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:53,023 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:53,062 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,066 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,068 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,071 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,129 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,138 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:53,139 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:55,020 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,078 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,110 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,122 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,133 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,152 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,180 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,599 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:55,711 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:55,757 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:55,803 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:55,927 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:55,952 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:55,954 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:55,955 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:56,804 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:56,849 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:56,857 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:02:56,937 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,026 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:02:58,080 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:58,142 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:58,188 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:02:58,576 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:02:58,614 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,617 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,623 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,625 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,700 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,701 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:02:58,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:00,492 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,614 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,625 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,646 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,650 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,678 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,710 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,734 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:00,774 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:00,822 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:00,883 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:00,930 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:00,955 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:00,961 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:00,961 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:01,912 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:01,950 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:02,008 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:02,012 - filelock - DEBUG - Attempting to acquire lock 2299937443520 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:02,015 - filelock - DEBUG - Lock 2299937443520 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:02,017 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:03:02,020 - filelock - DEBUG - Attempting to release lock 2299937443520 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:02,021 - filelock - DEBUG - Lock 2299937443520 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:02,139 - filelock - DEBUG - Attempting to acquire lock 2299943796080 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:02,141 - filelock - DEBUG - Lock 2299943796080 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:02,142 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:03:02,143 - filelock - DEBUG - Attempting to release lock 2299943796080 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:02,144 - filelock - DEBUG - Lock 2299943796080 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:02,236 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:03:02,787 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:03:02,799 - filelock - DEBUG - Attempting to acquire lock 2299949000000 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-68d80087c1fb6ee8_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:02,801 - filelock - DEBUG - Lock 2299949000000 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-68d80087c1fb6ee8_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:02,801 - filelock - DEBUG - Attempting to release lock 2299949000000 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-68d80087c1fb6ee8_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:02,802 - filelock - DEBUG - Lock 2299949000000 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-68d80087c1fb6ee8_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:02,806 - filelock - DEBUG - Attempting to acquire lock 2299949000000 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:02,842 - filelock - DEBUG - Lock 2299949000000 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:02,871 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-68d80087c1fb6ee8/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 16:03:02,912 - filelock - DEBUG - Attempting to acquire lock 2299908081616 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:02,914 - filelock - DEBUG - Lock 2299908081616 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:02,914 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-68d80087c1fb6ee8/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 16:03:02,915 - filelock - DEBUG - Attempting to release lock 2299908081616 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:02,917 - filelock - DEBUG - Lock 2299908081616 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:02,918 - filelock - DEBUG - Attempting to release lock 2299949000000 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:02,919 - filelock - DEBUG - Lock 2299949000000 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-68d80087c1fb6ee8\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:22,262 - root - INFO - Current memory usage is 0.001252MB; Peak was 0.001252MB
+2024-03-27 16:03:22,272 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:23,005 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:03:23,014 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:03:23,558 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:03:23,688 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:03:23,700 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:24,180 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:03:24,213 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:24,731 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:03:25,134 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:25,174 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:25,224 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:25,263 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 16:03:25,321 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:25,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:25,406 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,409 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,413 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,414 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,419 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,422 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,423 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:25,447 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:27,379 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,390 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,406 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,457 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,517 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,537 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,555 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:27,968 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:28,080 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:28,128 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:28,171 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:28,239 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:28,260 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:28,266 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:28,267 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:29,171 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:29,231 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:30,101 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:30,165 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,643 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:03:30,690 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:30,730 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:30,767 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:30,811 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:30,846 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,849 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,852 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,860 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,865 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,865 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:30,866 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:32,656 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,812 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,892 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,913 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,919 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,952 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,957 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:32,988 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:33,028 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:33,290 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:33,333 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:03:33,376 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:03:33,398 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:33,404 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:33,406 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:03:34,372 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:34,373 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:34,382 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:03:34,386 - filelock - DEBUG - Attempting to acquire lock 2375435352352 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:34,388 - filelock - DEBUG - Lock 2375435352352 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:34,389 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:03:34,391 - filelock - DEBUG - Attempting to release lock 2375435352352 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:34,392 - filelock - DEBUG - Lock 2375435352352 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:03:34,500 - filelock - DEBUG - Attempting to acquire lock 2375430534304 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:34,502 - filelock - DEBUG - Lock 2375430534304 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:34,503 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:03:34,504 - filelock - DEBUG - Attempting to release lock 2375430534304 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:34,505 - filelock - DEBUG - Lock 2375430534304 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:03:34,604 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:03:35,144 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:03:35,156 - filelock - DEBUG - Attempting to acquire lock 2375444774832 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-8441cd2e924743d5_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:35,158 - filelock - DEBUG - Lock 2375444774832 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-8441cd2e924743d5_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:35,158 - filelock - DEBUG - Attempting to release lock 2375444774832 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-8441cd2e924743d5_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:35,159 - filelock - DEBUG - Lock 2375444774832 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-8441cd2e924743d5_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:03:35,162 - filelock - DEBUG - Attempting to acquire lock 2375444774832 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:35,198 - filelock - DEBUG - Lock 2375444774832 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:35,229 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-8441cd2e924743d5/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 16:03:35,272 - filelock - DEBUG - Attempting to acquire lock 2375403128784 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:35,274 - filelock - DEBUG - Lock 2375403128784 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:35,274 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-8441cd2e924743d5/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 16:03:35,276 - filelock - DEBUG - Attempting to release lock 2375403128784 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:35,277 - filelock - DEBUG - Lock 2375403128784 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:03:35,279 - filelock - DEBUG - Attempting to release lock 2375444774832 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:03:35,280 - filelock - DEBUG - Lock 2375444774832 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-8441cd2e924743d5\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:04:45,896 - root - INFO - Test for successful test_module passed.
+2024-03-27 16:06:30,346 - root - INFO - Current memory usage is 0.0MB; Peak was 0.0MB
+2024-03-27 16:06:30,346 - root - INFO - Current memory usage is 0.0MB; Peak was 0.0MB
+2024-03-27 16:06:30,355 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:30,355 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:30,940 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:06:30,940 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:06:30,947 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:06:30,947 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:06:31,509 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:06:31,509 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:06:31,613 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:06:31,613 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:06:31,623 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:31,623 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:38,121 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:06:38,121 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:06:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:38,162 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:38,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:06:38,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:06:38,828 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:38,828 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:38,868 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:38,868 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:38,927 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:38,927 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:38,967 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 16:06:38,967 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/tree/e06acf2a88084f04bce4d4a525165d68e0a36c38/data?recursive=False&expand=False HTTP/1.1" 200 2667
+2024-03-27 16:06:39,015 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:39,015 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:39,072 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:39,072 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:39,110 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,110 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,114 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,114 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,116 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,116 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,122 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,124 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,124 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,152 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,152 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,155 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:39,155 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:41,064 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,064 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,107 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,107 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,202 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,202 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,273 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,273 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,290 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,290 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,322 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,322 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,350 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,350 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,603 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,603 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:41,651 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:41,651 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:41,695 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:41,695 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:41,793 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:41,793 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:42,114 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:42,114 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:42,146 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:42,146 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:42,155 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:42,155 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:42,156 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:42,156 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:43,106 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,106 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,111 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,111 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,125 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,125 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:43,195 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:43,195 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:43,848 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:06:43,848 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:06:43,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:43,893 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:43,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:43,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:43,986 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:43,986 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:44,024 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:44,024 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:44,053 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,053 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,058 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,058 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,063 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,063 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,071 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,071 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,075 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,075 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,078 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,078 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,105 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:44,105 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,316 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,316 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,337 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,337 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,340 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,340 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,347 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,347 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,388 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,388 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,423 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,423 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,479 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,479 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,507 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,507 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:46,551 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:46,551 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:46,601 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:46,601 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:46,647 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:46,647 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:06:46,687 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:46,687 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:06:46,711 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,711 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,716 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,716 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,718 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:46,718 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:06:47,767 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:47,767 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:47,787 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:47,787 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:48,054 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:48,054 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:06:48,058 - filelock - DEBUG - Attempting to acquire lock 1632898874496 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,058 - filelock - DEBUG - Attempting to acquire lock 1632898874496 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,060 - filelock - DEBUG - Lock 1632898874496 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,060 - filelock - DEBUG - Lock 1632898874496 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,063 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:06:48,063 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:06:48,065 - filelock - DEBUG - Attempting to release lock 1632898874496 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,065 - filelock - DEBUG - Attempting to release lock 1632898874496 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,066 - filelock - DEBUG - Lock 1632898874496 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,066 - filelock - DEBUG - Lock 1632898874496 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:06:48,270 - filelock - DEBUG - Attempting to acquire lock 1632934919440 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,270 - filelock - DEBUG - Attempting to acquire lock 1632934919440 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,271 - filelock - DEBUG - Lock 1632934919440 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,271 - filelock - DEBUG - Lock 1632934919440 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,272 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:06:48,272 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:06:48,273 - filelock - DEBUG - Attempting to release lock 1632934919440 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,273 - filelock - DEBUG - Attempting to release lock 1632934919440 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,274 - filelock - DEBUG - Lock 1632934919440 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,274 - filelock - DEBUG - Lock 1632934919440 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:06:48,399 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:06:48,399 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:06:49,036 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:06:49,036 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:06:49,045 - filelock - DEBUG - Attempting to acquire lock 1632940108416 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,045 - filelock - DEBUG - Attempting to acquire lock 1632940108416 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,047 - filelock - DEBUG - Lock 1632940108416 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,047 - filelock - DEBUG - Lock 1632940108416 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,047 - filelock - DEBUG - Attempting to release lock 1632940108416 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,047 - filelock - DEBUG - Attempting to release lock 1632940108416 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,048 - filelock - DEBUG - Lock 1632940108416 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,048 - filelock - DEBUG - Lock 1632940108416 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_parquet_default-00df2cc41df76e61_0.0.0_62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.lock
+2024-03-27 16:06:49,086 - filelock - DEBUG - Attempting to acquire lock 1632924044032 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,086 - filelock - DEBUG - Attempting to acquire lock 1632924044032 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,088 - filelock - DEBUG - Lock 1632924044032 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,088 - filelock - DEBUG - Lock 1632924044032 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,112 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-00df2cc41df76e61/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 16:06:49,112 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-00df2cc41df76e61/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/parquet-train-00000-00000-of-NNNNN.arrow
+2024-03-27 16:06:49,142 - filelock - DEBUG - Attempting to acquire lock 1632934787840 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,142 - filelock - DEBUG - Attempting to acquire lock 1632934787840 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,143 - filelock - DEBUG - Lock 1632934787840 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,143 - filelock - DEBUG - Lock 1632934787840 acquired on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,143 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-00df2cc41df76e61/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 16:06:49,143 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/parquet/default-00df2cc41df76e61/0.0.0/62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete/dataset_info.json
+2024-03-27 16:06:49,145 - filelock - DEBUG - Attempting to release lock 1632934787840 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,145 - filelock - DEBUG - Attempting to release lock 1632934787840 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,145 - filelock - DEBUG - Lock 1632934787840 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,145 - filelock - DEBUG - Lock 1632934787840 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db.incomplete_info.lock
+2024-03-27 16:06:49,147 - filelock - DEBUG - Attempting to release lock 1632924044032 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,147 - filelock - DEBUG - Attempting to release lock 1632924044032 on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,147 - filelock - DEBUG - Lock 1632924044032 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:06:49,147 - filelock - DEBUG - Lock 1632924044032 released on C:\Users\Admin\.cache\huggingface\datasets\parquet\default-00df2cc41df76e61\0.0.0\62d0a49e103aa24c107d63273c3426a8ce02488f032cba1725ec4dd00b4f05db_builder.lock
+2024-03-27 16:07:58,600 - root - INFO - Test for successful test_module passed.
+2024-03-27 16:07:58,600 - root - INFO - Test for successful test_module passed.
+2024-03-27 16:07:59,428 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:07:59,428 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:07:59,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:07:59,433 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:08:00,022 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:08:00,022 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/food101/food101.py HTTP/1.1" 404 0
+2024-03-27 16:08:00,282 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:08:00,282 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101 HTTP/1.1" 200 4621
+2024-03-27 16:08:00,294 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:00,294 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:00,861 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:08:00,861 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/README.md HTTP/1.1" 200 0
+2024-03-27 16:08:00,886 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:00,886 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:01,688 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:08:01,688 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/.huggingface.yaml HTTP/1.1" 404 0
+2024-03-27 16:08:01,723 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:01,723 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:01,899 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:01,899 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:01,949 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:01,949 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:02,006 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:02,006 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:02,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,033 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,033 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,034 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,034 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,037 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,040 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,037 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,040 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,104 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,105 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:02,105 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:04,702 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,702 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,758 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,758 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,827 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,827 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,855 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,855 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,929 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,929 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,971 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:04,971 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:05,363 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:05,363 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:05,424 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:05,424 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:05,478 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:05,478 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:05,526 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:05,526 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:05,593 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:05,593 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:05,637 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:05,637 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:05,657 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:05,657 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:05,665 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:05,665 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:05,667 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:05,667 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:06,721 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:06,721 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:06,770 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:06,770 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:07,402 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:07,402 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:07,461 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:07,461 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,338 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:08:08,338 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /datasets/food101/resolve/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_infos.json HTTP/1.1" 404 0
+2024-03-27 16:08:08,452 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:08,452 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:08,532 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:08,532 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:08,611 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:08,611 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:08,744 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:08,744 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:08,776 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,776 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,784 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,784 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,786 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,786 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,816 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,816 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,889 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,889 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,908 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,908 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,908 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,908 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,964 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:08,964 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:11,247 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,247 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,251 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,251 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,341 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,341 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,361 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,361 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,372 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,372 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,434 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,434 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,509 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,509 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,870 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,870 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:11,940 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:11,940 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:12,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:12,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:12,498 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:12,498 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 96
+2024-03-27 16:08:13,046 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:13,046 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "POST /api/datasets/food101/paths-info/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 235
+2024-03-27 16:08:13,089 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:13,089 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:13,090 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:13,090 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:13,096 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:13,096 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-03-27 16:08:14,147 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,147 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,190 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,190 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/datasets/food101/revision/e06acf2a88084f04bce4d4a525165d68e0a36c38 HTTP/1.1" 200 4621
+2024-03-27 16:08:14,371 - filelock - DEBUG - Attempting to acquire lock 1632934182992 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,371 - filelock - DEBUG - Attempting to acquire lock 1632934182992 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,376 - filelock - DEBUG - Lock 1632934182992 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,376 - filelock - DEBUG - Lock 1632934182992 acquired on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,378 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:08:14,378 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:08:14,380 - filelock - DEBUG - Attempting to release lock 1632934182992 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,380 - filelock - DEBUG - Attempting to release lock 1632934182992 on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,383 - filelock - DEBUG - Lock 1632934182992 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,383 - filelock - DEBUG - Lock 1632934182992 released on C:\Users\Admin\.cache\huggingface\datasets\_Users_Admin_.cache_huggingface_datasets_food101_default_0.0.0_e06acf2a88084f04bce4d4a525165d68e0a36c38.lock
+2024-03-27 16:08:14,390 - filelock - DEBUG - Attempting to acquire lock 1633476358848 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,390 - filelock - DEBUG - Attempting to acquire lock 1633476358848 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,392 - filelock - DEBUG - Lock 1633476358848 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,392 - filelock - DEBUG - Lock 1633476358848 acquired on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,394 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:08:14,394 - fsspec.local - DEBUG - open file: C:/Users/Admin/.cache/huggingface/datasets/food101/default/0.0.0/e06acf2a88084f04bce4d4a525165d68e0a36c38/dataset_info.json
+2024-03-27 16:08:14,397 - filelock - DEBUG - Attempting to release lock 1633476358848 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,397 - filelock - DEBUG - Attempting to release lock 1633476358848 on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,398 - filelock - DEBUG - Lock 1633476358848 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,398 - filelock - DEBUG - Lock 1633476358848 released on C:\Users\Admin\.cache\huggingface\datasets\food101\default\0.0.0\e06acf2a88084f04bce4d4a525165d68e0a36c38_builder.lock
+2024-03-27 16:08:14,617 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:08:14,617 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-03-27 16:08:15,248 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:08:15,248 - urllib3.connectionpool - DEBUG - https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/parquet/parquet.py HTTP/1.1" 404 0
+2024-03-27 16:08:15,255 - root - INFO - Test for successful test_module passed.
+2024-03-27 16:08:15,255 - root - INFO - Test for successful test_module passed.
