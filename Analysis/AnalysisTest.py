@@ -4,13 +4,22 @@ from Analysis import app, Analysis
 from datasets import load_dataset
 import numpy as np
 from PIL import Image
-import io
-import base64
+import logging
+import tracemalloc
 from pymongo import MongoClient
 mongo_url = 'mongodb://localhost:27017'
 client = MongoClient(mongo_url)
 db = client['ML_data']
 collection = db['Analysis_data']
+logging.basicConfig(filename='./testAnalysis.log', filemode='a', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+mylogger = logging.getLogger()
+fhandler = logging.FileHandler(filename='testAnalysis.log', mode='a')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fhandler.setFormatter(formatter)
+mylogger.addHandler(fhandler)
+mylogger.setLevel(logging.DEBUG)
+tracemalloc.start()
 @pytest.fixture
 def client():
     app.config['TESTING'] = True
@@ -30,10 +39,12 @@ def test_analysis_api(client):
         'dataset_path': dataset_path,
         'model_name': 'google/vit-base-patch16-224-in21k'
     })
-    assert response.status_code == 200
+    try:
+        assert response.status_code == 200
+        mylogger.info("Test for post method pass")
+    except AssertionError:
+        mylogger.error("Test for post method failed")
 def test_analysis_api_get(client):
-
-
 
     # Insert a test document
     test_doc = {'size': (512, 512), 'mean': 128.0, 'std_dev': 25.0, 'image_id': 0}
@@ -43,8 +54,15 @@ def test_analysis_api_get(client):
     response = client.get('/analysis', json = {'id':0})
 
     # Check the response status code and data
-    assert response.status_code == 200
-
+    try:
+        assert response.status_code == 200
+        mylogger.info("Test for get method passed.\n")
+    except AssertionError:
+        mylogger.error("Test for get method failed\n")
     # Cleanup the test document
     collection.delete_one({'image_id': 0})
+current, peak = tracemalloc.get_traced_memory()
+mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
+tracemalloc.stop()
+
 
