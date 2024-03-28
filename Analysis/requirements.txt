@@ -1,0 +1,8 @@
+flask
+flask_restful
+Pillow
+numpy
+pymongo
+transformers
+torchvision
+datasets
