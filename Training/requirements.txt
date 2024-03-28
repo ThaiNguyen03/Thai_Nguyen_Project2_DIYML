@@ -1,0 +1,12 @@
+flask
+flask_restful
+pymongo
+numpy
+scikit-learn
+torch
+Pillow
+datasets
+transformers
+accelerate
+evaluate
+torchvision
