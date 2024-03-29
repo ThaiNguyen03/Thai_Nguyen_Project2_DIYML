@@ -3,7 +3,7 @@ import logging
 import tracemalloc
 import PIL
 from PIL import Image
-from Inference import app, InferenceAPI
+from Inference import app, InferenceAPI, task_queue, task_complete_event
 import datasets
 from datasets import load_dataset
 import os
@@ -28,7 +28,8 @@ def client():
         yield client
 
 
-def test_inference_api(client):
+
+def test_task_queue(client):
     test_set = load_dataset("food101", split="validation[:100]")
     # test_set.save_to_disk('./training_test')
     test_set.to_parquet('./inference.parquet')
@@ -37,30 +38,39 @@ def test_inference_api(client):
     if not os.path.exists(image_path):
         os.mkdir(image_path)
     image = image.save(f"{image_path}/image.png")
-    response = client.post('/inference/user1/project1', json={
+    image = test_set["image"][1]
+    image_path = "./inference_data"
+    if not os.path.exists(image_path):
+        os.mkdir(image_path)
+    image = image.save(f"{image_path}/image1.png")
+    with task_queue.mutex:
+        task_queue.queue.clear()
+    task_complete_event.clear()
+    rv1 = client.post('/inference/user1/project1', json={
         'model_name': 'test_model_path',
         'image_path': f'{image_path}/image.png',
         'model_path': '../Training/test_user/test_project/model'
     })
-    assert response.status_code == 200
-    assert response.get_json() == {"message": "Inference run successfully", "results": "beignets"}
-def test_wrong_image(client):
-        test_set = load_dataset("food101", split="validation[:100]")
-        # test_set.save_to_disk('./training_test')
-        test_set.to_parquet('./inference.parquet')
-        image = test_set["image"][10]
-        image_path = "./inference_data"
-        if not os.path.exists(image_path):
-            os.mkdir(image_path)
-        image = image.save(f"{image_path}/image.png")
-        response = client.post('/inference/user1/project1', json={
+    rv2 = client.post('/inference/user1/project1', json={
+        'model_name': 'test_model_path',
+        'image_path': f'{image_path}/image1.png',
+        'model_path': '../Training/test_user/test_project/model'
+    })
+    rv3 = client.post('/inference/user1/project1', json={
             'model_name': 'test_model_path',
             'image_path': f'{image_path}/image_wrong.png',
             'model_path': '../Training/test_user/test_project/model'
         })
-        assert response.status_code == 404
 
-        mylogger.info('Test for successful inference passed.')
+    task_complete_event.wait()
+    assert task_queue.empty()
+
+    assert rv1.status_code == 200
+
+    assert rv2.status_code == 200
+    assert rv3.status_code == 404
+
+
 current, peak = tracemalloc.get_traced_memory()
 mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
 
