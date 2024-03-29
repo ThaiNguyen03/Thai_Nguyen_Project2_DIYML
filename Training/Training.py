@@ -26,7 +26,7 @@ db = client['ML_data']
 model_collection = db['model_data']  # Collection to store model parameters
 stats_collection = db['stats']  # Collection to store training stats
 task_queue = Queue()
-
+results_dict = {}
 
 class UploadParameters(Resource):
     def post(self):
@@ -146,10 +146,13 @@ def start_training(data):
     return {"message": f"Training for model {model_name} completed successfully"}, 200
 
 
-def worker():
+def worker(request_id):
     while not task_queue.empty():
         data = task_queue.get()
-        start_training(data)
+       # start_training(data)
+        result, status_code = start_training(data)
+       # print(result)
+        results_dict[request_id] = (result, status_code)
         task_queue.task_done()
     task_complete_event.set()
 
@@ -157,13 +160,21 @@ def worker():
 class StartTraining(Resource):
     def post(self):
         data = request.get_json()
+        user_id = data.get('user_id')
+        project_id = data.get('project_id')
+        request_id = f"{user_id}_{project_id}"
         task_queue.put(data)
         task_complete_event.clear()
-        worker_thread = Thread(target=worker)
+        worker_thread = Thread(target=worker,args=(request_id,))
         worker_thread.start()
-
-        task_complete_event.wait()
-        return {"message": "Training request received"}, 200
+        worker_thread.join()
+        #task_complete_event.wait()
+        if request_id in results_dict:
+            result, status_code = results_dict.pop(request_id)
+            return result, status_code
+        else:
+            return {"message": "Error occurred during inference"}, 500
+        #return {"message": "Training request received"}, 200
 
 
 api.add_resource(UploadParameters, '/upload_parameters')
