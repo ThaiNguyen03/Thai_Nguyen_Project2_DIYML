@@ -3,8 +3,8 @@ import logging
 import tracemalloc
 from unittest.mock import patch, MagicMock
 from flask import Flask
-from Dataupload import app, ImageUpload, LabelUpload  # replace with the actual name of your Flask app
-
+from Dataupload import app, ImageUpload, LabelUpload, ParquetExport
+import os
 logging.basicConfig(filename='./testDataUpload.log', filemode='a', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 mylogger = logging.getLogger()
@@ -24,7 +24,7 @@ def test_image_upload():
             mock_request.files = {'file': mock_file}
 
             try:
-                response = app.test_client().post('/upload_images/test_user/test_project/test_image')
+                response = app.test_client().post('/upload_images')
                 assert response.status_code == 200
                 assert b'Image uploaded successfully' in response.data
                 mylogger.info('Image upload test passed successfully.')
@@ -44,7 +44,7 @@ def test_label_upload():
             mock_request.files = {'file': mock_file}
 
             try:
-                response = app.test_client().post('/upload_label/test_user/test_project/test_image')
+                response = app.test_client().post('/upload_label')
                 assert response.status_code == 200
                 assert b'Label uploaded successfully' in response.data
                 mylogger.info('Label upload test passed successfully.')
@@ -54,7 +54,15 @@ def test_label_upload():
     current, peak = tracemalloc.get_traced_memory()
     mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
     tracemalloc.stop()
-
+def test_parquet_export():
+    with app.test_request_context():
+        try:
+            response = app.test_client().get('/export_to_parquet')
+            assert response.status_code == 200
+            assert os.path.exists('image_data.parquet')
+            mylogger.info('Parquet export test passed successfully.')
+        except Exception as e:
+            mylogger.error(str(e))
 
 if __name__ == "__main__":
     pytest.main()

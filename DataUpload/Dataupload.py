@@ -3,6 +3,7 @@ from fileinput import filename
 from flask_restful import Resource, Api
 from pymongo import MongoClient
 import os
+import pandas as pd
 
 app = Flask(__name__)
 api = Api(app)
@@ -70,8 +71,23 @@ class LabelUpload(Resource):
         return 'Label uploaded successfully', 200
 
 
-api.add_resource(ImageUpload, '/upload_images/<user_id>/<project_id>/<image_id>/')
-api.add_resource(LabelUpload, '/upload_label/<user_id>/<project_id>/<image_id>')
+class ParquetExport(Resource):
+    def get(self):
+        # Get all documents from the collection
+        cursor = image_collection.find({})
 
+        # Create a DataFrame
+        df = pd.DataFrame(list(cursor))
+
+        # Save DataFrame to a Parquet file
+        df.to_parquet('image_data.parquet')
+
+        # Send file
+        return send_file('image_data.parquet', as_attachment=True)
+
+
+api.add_resource(ImageUpload, '/upload_images')
+api.add_resource(LabelUpload, '/upload_label')
+api.add_resource(ParquetExport, '/export_to_parquet')
 if __name__ == '__main__':
     app.run(debug=True)
