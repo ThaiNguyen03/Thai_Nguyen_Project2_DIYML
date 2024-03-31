@@ -1,0 +1,6 @@
+flask
+flask-restful
+Pillow
+transformers
+torch
+datasets
