@@ -16,7 +16,7 @@ image_collection = db['images']  # Collection to store image metadata
 
 
 class ImageUpload(Resource):
-    def post(self, user_id, project_id, image_id):
+    def post(self):
         if 'file' not in request.files:
             return 'No file part', 400
 
@@ -31,7 +31,9 @@ class ImageUpload(Resource):
             f.save(filepath)
         except Exception as e:
             return str(e), 500
-
+        user_id = request.form.get('user_id')
+        project_id = request.form.get('project_id')
+        image_id = request.form.get('image_id')
         # Store image metadata in MongoDB
         image_data = {
             'user_id': user_id,
@@ -50,7 +52,7 @@ class ImageUpload(Resource):
 
 
 class LabelUpload(Resource):
-    def post(self, user_id, project_id, image_id):
+    def post(self):
         if 'file' not in request.files:
             return 'No file part', 400
 
@@ -60,7 +62,9 @@ class LabelUpload(Resource):
             f.save(label_filename)
         except Exception as e:
             return str(e), 500
-
+        user_id = request.form.get('user_id')
+        project_id = request.form.get('project_id')
+        image_id = request.form.get('image_id')
         # Update image metadata with label information
         image_query = {'user_id': user_id, 'project_id': project_id, 'image_id': image_id}
         try:

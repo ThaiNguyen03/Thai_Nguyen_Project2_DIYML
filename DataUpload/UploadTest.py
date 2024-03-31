@@ -22,9 +22,10 @@ def test_image_upload():
             mock_file = MagicMock()
             mock_file.filename = 'test_image.jpg'
             mock_request.files = {'file': mock_file}
+            mock_request.form = {'user_id': 'test_user', 'project_id': 'test_project', 'image_id': 'test_image'}
 
             try:
-                response = app.test_client().post('/upload_images')
+                response = app.test_client().post('/upload_images', data = mock_request.form)
                 assert response.status_code == 200
                 assert b'Image uploaded successfully' in response.data
                 mylogger.info('Image upload test passed successfully.')
@@ -42,9 +43,10 @@ def test_label_upload():
             mock_file = MagicMock()
             mock_file.filename = 'test_label.txt'
             mock_request.files = {'file': mock_file}
+            mock_request.form = {'user_id': 'test_user', 'project_id': 'test_project', 'image_id': 'test_image'}
 
             try:
-                response = app.test_client().post('/upload_label')
+                response = app.test_client().post('/upload_label',data = mock_request.form)
                 assert response.status_code == 200
                 assert b'Label uploaded successfully' in response.data
                 mylogger.info('Label upload test passed successfully.')
