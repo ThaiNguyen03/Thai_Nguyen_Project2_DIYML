@@ -40,10 +40,12 @@ def test_image_upload():
 def test_label_upload():
     with app.test_request_context():
         with patch('flask.request') as mock_request:
-            mock_file = MagicMock()
-            mock_file.filename = 'test_label.txt'
-            mock_request.files = {'file': mock_file}
-            mock_request.form = {'user_id': 'test_user', 'project_id': 'test_project', 'image_id': 'test_image'}
+            label = 'test'
+            mock_request.form = {'user_id': 'test_user',
+                                 'project_id': 'test_project',
+                                 'image_id': 'test_image',
+                                 'label': label
+                                 }
 
             try:
                 response = app.test_client().post('/upload_label',data = mock_request.form)

@@ -50,25 +50,32 @@ class ImageUpload(Resource):
 
         return 'Image uploaded successfully', 200
 
-
-class LabelUpload(Resource):
-    def post(self):
-        if 'file' not in request.files:
-            return 'No file part', 400
-
-        f = request.files['file']
-        label_filename = f.filename
-        try:
-            f.save(label_filename)
-        except Exception as e:
-            return str(e), 500
+    def delete(self):
         user_id = request.form.get('user_id')
         project_id = request.form.get('project_id')
         image_id = request.form.get('image_id')
+        image_query = {'user_id': user_id,
+                       'project_id': project_id,
+                       'image_id': image_id}
+        try:
+            result = image_collection.delete_one(image_query)
+            if result.deleted_count == 1:
+                return 'Image deleted successfully', 200
+            else:
+                return 'No image found with the given image_id', 404
+        except Exception as e:
+            return str(e), 500
+
+class LabelUpload(Resource):
+    def post(self):
+        user_id = request.form.get('user_id')
+        project_id = request.form.get('project_id')
+        image_id = request.form.get('image_id')
+        label = request.form.get('label')
         # Update image metadata with label information
         image_query = {'user_id': user_id, 'project_id': project_id, 'image_id': image_id}
         try:
-            image_collection.update_one(image_query, {'$set': {'label': label_filename}})
+            image_collection.update_one(image_query, {'$set': {'label': label}})
         except Exception as e:
             return str(e), 500
 
