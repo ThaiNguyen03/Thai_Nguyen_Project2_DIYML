@@ -1,0 +1,41 @@
+name: Data Upload Module CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dataupload/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'dataupload/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest
+
+    - name: Run unit tests
+      run: |
+        cd DataUpload
+        pytest -s UploadTest.py
+
+    # Uncomment the following lines to deploy
+    # - name: Deploy
+    #   run: |
+    #     # Add deployment commands here
+    #     echo "Deploying dataupload module"
