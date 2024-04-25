@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'dataupload/**'
+      - 'DataUpload/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'dataupload/**'
+      - 'DataUpload/**'
 
 jobs:
   build:
@@ -34,8 +34,4 @@ jobs:
         cd DataUpload
         pytest -s UploadTest.py
 
-    # Uncomment the following lines to deploy
-    # - name: Deploy
-    #   run: |
-    #     # Add deployment commands here
-    #     echo "Deploying dataupload module"
+    
