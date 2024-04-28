@@ -4,7 +4,7 @@ from flask_restful import Resource, Api
 from pymongo import MongoClient
 import os
 import pandas as pd
-
+from werkzeug.utils import secure_filename
 app = Flask(__name__)
 api = Api(app)
 
@@ -13,8 +13,9 @@ mongo_url = 'mongodb://localhost:27017'
 client = MongoClient(mongo_url)
 db = client['ML_data']
 image_collection = db['images']  # Collection to store image metadata
-
-
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 class ImageUpload(Resource):
     def post(self):
         if 'file' not in request.files:
@@ -22,7 +23,12 @@ class ImageUpload(Resource):
 
         f = request.files['file']
         file_name = f.filename
-
+        if f.filename == '':
+            return 'No selected file', 400
+        if f and allowed_file(f.filename):
+            filename = secure_filename(f.filename)
+        else:
+            return 'File type not allowed', 400
         filepath = os.path.join('/<user_id>/<project_id>/images', file_name)
         if not os.path.exists('/<user_id>/<project_id>/images'):
             os.makedirs('/<user_id>/<project_id>/images')
