@@ -42,20 +42,18 @@ def test_upload_parameters(client):
     assert b'Parameters uploaded successfully' in rv.data
 
 
-# def test_start_training(client):
-#    rv = client.post('/start_training', json={
-#        'user_id': 'test_user',
-#        'project_id': 'test_project',
-#        'model_name': 'google/vit-base-patch16-224-in21k'
-#    })
-#   try:
-#      assert rv.status_code == 200
-#     mylogger.info("test_start_training passed")
-# except AssertionError:
-#    mylogger.error("test_start_training not passed")
-#    current, peak = tracemalloc.get_traced_memory()
-#    mylogger.info(f"Current memory usage is {current / 10 ** 6}MB; Peak was {peak / 10 ** 6}MB")
-#    tracemalloc.stop()
+def test_start_training(client):
+    rv = client.post('/start_training', json={
+        'user_id': 'test_user',
+        'project_id': 'test_project',
+        'model_name': 'google/vit-base-patch16-224-in21k'
+    })
+    try:
+        assert rv.status_code == 200
+        mylogger.info("test_start_training passed")
+    except AssertionError:
+        mylogger.error("test_start_training not passed")
+
 
 
 # assert b'Training for model test_model completed successfully' in rv.data

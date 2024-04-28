@@ -27,6 +27,24 @@ model_collection = db['model_data']  # Collection to store model parameters
 stats_collection = db['stats']  # Collection to store training stats
 task_queue = Queue()
 results_dict = {}
+def validate_parameters(params):
+    errors = []
+    if not isinstance(params['learning_rate'], (float, int)) or params['learning_rate'] <= 0:
+        errors.append("learning_rate must be a positive number.")
+    if not isinstance(params['per_device_train_batch_size'], int) or params['per_device_train_batch_size'] <= 0:
+        errors.append("per_device_train_batch_size must be a positive integer.")
+    if not isinstance(params['gradient_accumulation_steps'], int) or params['gradient_accumulation_steps'] <= 0:
+        errors.append("gradient_accumulation_steps must be a positive integer.")
+    if not isinstance(params['per_device_eval_batch_size'], int) or params['per_device_eval_batch_size'] <= 0:
+        errors.append("per_device_eval_batch_size must be a positive integer.")
+    if not isinstance(params['num_train_epochs'], int) or params['num_train_epochs'] <= 0:
+        errors.append("num_train_epochs must be a positive integer.")
+    if not isinstance(params['warmup_ratio'], float) or params['warmup_ratio'] < 0 or params['warmup_ratio'] > 1:
+        errors.append("warmup_ratio must be a positive float between 0 and 1.")
+    if not isinstance(params['logging_steps'], int) or params['logging_steps'] <= 0:
+        errors.append("logging_steps must be a positive integer.")
+
+    return errors
 
 class UploadParameters(Resource):
     def post(self):
@@ -35,6 +53,9 @@ class UploadParameters(Resource):
         user_id = data.get('user_id')
         project_id = data.get('project_id')
         parameters = data.get('parameters')
+        validation_errors = validate_parameters(parameters)
+        if validation_errors:
+            return {"message": "Validation failed", "errors": validation_errors}, 400
         model_collection.insert_one({
             'user_id': user_id,
             'project_id': project_id,
