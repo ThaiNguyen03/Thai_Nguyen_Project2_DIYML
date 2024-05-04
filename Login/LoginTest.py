@@ -2,7 +2,7 @@ import pytest
 import logging
 import tracemalloc
 
-from Login import app, LoginAPI, collection  # replace 'your_flask_app' with the name of your python file
+from Login import app, LoginAPI, collection
 
 # Set up logging
 logging.basicConfig(filename='./testLogin.log', filemode='a', level=logging.INFO,
